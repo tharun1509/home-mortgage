@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amortization Schedule - AZ Mortgage</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Amortization Schedule</h1>
+
+    <div class="summary">
+        <div class="summary-item">
+            <span class="summary-label">Loan Amount:</span>
+            <span class="summary-value" id="summaryLoan">$0</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Interest Rate:</span>
+            <span class="summary-value" id="summaryRate">0%</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Loan Term:</span>
+            <span class="summary-value" id="summaryTerm">0 years</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Monthly Payment:</span>
+            <span class="summary-value" id="summaryPayment">$0</span>
+        </div>
+    </div>
+
+    <div class="schedule">
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Payment</th>
+                    <th>Principal</th>
+                    <th>Interest</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+        </table>
+    </div>
+
+    <button class="btn-back" onclick="goBack()">Back to Calculator</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
